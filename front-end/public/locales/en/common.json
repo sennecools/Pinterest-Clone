@@ -1,0 +1,56 @@
+{
+    "login": {
+        "title": "Login",
+        "label": {
+            "username": "Username",
+            "password": "Password"
+        },
+        "button": "Log in",
+        "success": "Logged in successfully! Redirecting...",
+        "error": "Invalid username or password.",
+        "validate": {
+            "name": "Please enter your username.",
+            "password": "Please enter your password."
+        },
+        "noAccount": "Not a user yet?",
+        "signup": "Sign up here"
+    },
+    "signup": {
+        "title": "Sign Up",
+        "label": {
+            "username": "Username",
+            "password": "Password",
+            "confirmPassword": "Confirm Password"
+        },
+        "button": "Sign Up",
+        "success": "Account created successfully! Logging you in...",
+        "error": "An error occurred during signup.",
+        "alreadyUser": "Already have an account?",
+        "login": "Log in here",
+        "validate": {
+            "name": "Please enter your username.",
+            "password": "Please enter your password.",
+            "passwordLength": "Password must be at least 8 characters long.",
+            "confirmPassword": "Passwords do not match."
+        }
+    },
+    "header": {
+        "nav": {
+            "home": "Home",
+            "boards": "Boards",
+            "pins": "Pins",
+            "profile": "Profile",
+            "login": "Login",
+            "signout": "Sign Out"
+        },
+        "welcome": "Welcome"
+    },
+    "home": {
+        "title": "Welcome to Pinnacle!",
+        "greeting": "Hello, {{username}} 👋",
+        "explore": "Use the navigation to explore boards and pins."
+    },
+    "general": {
+        "error": "An unexpected error occurred. Please try again later."
+    }
+}

@@ -1,0 +1,47 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+// Table for users
+model User {
+    id        Int     @id @default(autoincrement())
+    username  String  @unique
+    password  String
+    role      String  @default("USER")
+    boards    Board[] // One-to-Many relation
+    savedPins Pin[]   @relation("SavedPins") // Many-to-Many relation
+}
+
+// Table for boards
+model Board {
+    id        Int      @id @default(autoincrement())
+    name      String
+    user      User     @relation(fields: [userId], references: [id])
+    userId    Int
+    pins      Pin[]    @relation("BoardPins") // Many-to-Many relation
+    createdAt DateTime @default(now())
+}
+
+// Table for pins
+model Pin {
+    id          Int        @id @default(autoincrement())
+    title       String
+    imageUrl    String
+    description String?
+    boards      Board[]    @relation("BoardPins") // Many-to-Many relation
+    usersSaved  User[]     @relation("SavedPins") // Many-to-Many relation
+    createdAt   DateTime   @default(now())
+    categories  Category[] @relation("PinCategories") // Many-to-Many relation
+}
+
+// Table for categories
+model Category {
+    id   Int    @id @default(autoincrement())
+    name String @unique
+    pins Pin[]  @relation("PinCategories") // Many-to-Many relation
+}

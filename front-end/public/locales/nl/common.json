@@ -1,0 +1,56 @@
+{
+    "login": {
+        "title": "Inloggen",
+        "label": {
+            "username": "Gebruikersnaam",
+            "password": "Wachtwoord"
+        },
+        "button": "Inloggen",
+        "success": "Succesvol ingelogd! Doorverwijzen...",
+        "error": "Ongeldige gebruikersnaam of wachtwoord.",
+        "validate": {
+            "name": "Vul uw gebruikersnaam in.",
+            "password": "Vul uw wachtwoord in."
+        },
+        "noAccount": "Nog geen account?",
+        "signup": "Registreer hier"
+    },
+    "signup": {
+        "title": "Registreren",
+        "label": {
+            "username": "Gebruikersnaam",
+            "password": "Wachtwoord",
+            "confirmPassword": "Bevestig wachtwoord"
+        },
+        "button": "Registreren",
+        "success": "Account succesvol aangemaakt! U wordt ingelogd...",
+        "error": "Er is een fout opgetreden bij het registreren.",
+        "alreadyUser": "Heeft u al een account?",
+        "login": "Log hier in",
+        "validate": {
+            "name": "Vul uw gebruikersnaam in.",
+            "password": "Vul uw wachtwoord in.",
+            "passwordLength": "Het wachtwoord moet minstens 8 tekens lang zijn.",
+            "confirmPassword": "Wachtwoorden komen niet overeen."
+        }
+    },
+    "header": {
+        "nav": {
+            "home": "Home",
+            "boards": "Borden",
+            "pins": "Pins",
+            "profile": "Profiel",
+            "login": "Inloggen",
+            "signout": "Uitloggen"
+        },
+        "welcome": "Welkom"
+    },
+    "home": {
+        "title": "Welkom bij Pinnacle!",
+        "greeting": "Hallo, {{username}} 👋",
+        "explore": "Gebruik de navigatie om borden en pins te verkennen."
+    },
+    "general": {
+        "error": "Er is een onverwachte fout opgetreden. Probeer het later opnieuw."
+    }
+}
